@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Vamsi B | Java Developer</title>
+
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        body {
+            background: linear-gradient(135deg, #0f172a, #020617);
+            color: whitesmoke;
+        }
+
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #38bdf8;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #cbd5f5;
+        }
+
+        
+        section {
+            width: 85%;
+            margin: auto;
+        }
+
+    
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .card h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            border: 1px solid #38bdf8;
+            padding: 12px;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        
+        .project h3 {
+            color: #facc15;
+            margin-bottom: 10px;
+        }
+
+    
+        .contact a {
+            display: block;
+            margin-top: 8px;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+
+<header>
+    <h1>Vamsi B</h1>
+    <p>Java Developer | Fresher</p>
+</header>
+
+
+<section>
+
+    
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a Java Developer with strong knowledge of Core Java and OOPs.
+            I have developed CRUD-based applications using Java, JDBC, and MySQL.
+            I also created this personal portfolio using HTML and CSS.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Core Java</div>
+            <div class="skill">OOPs</div>
+            <div class="skill">Collections</div>
+            <div class="skill">JDBC</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </div>
+
+    
+    <div class="card project">
+        <h2>Project</h2>
+        <h3>Student Management System (CRUD Application)</h3>
+        <p>
+            This project allows users to perform Create, Read, Update,
+            and Delete operations on student records stored in a MySQL database.
+        </p>
+        <p><b>Technologies Used:</b> Java, JDBC, MySQL</p>
+    </div>
+
+    
+    <div class="card contact">
+        <h2>Contact</h2>
+        <a>Email: Vamsi.purushotham@outlook.com</a>
+        <a href="https://github.com/VAMSIB123" target="_blank">
+            GitHub: https://github.com/VAMSIB123
+        </a>
+        <a href="https://www.linkedin.com/in/vamsi-b" target="_blank">
+            LinkedIn: Vamsi B
+        </a>
+    </div>
+
+</section>
+
+
+<footer>
+    © 2026 Vamsi B | Java Developer
+</footer>
+
+</body>
+</html>
