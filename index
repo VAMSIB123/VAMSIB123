@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPortfolio</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Portfolio Section -->
+  <section id="home" class="portfolio-section">
+    <div class="intro-text">
+      <h1>Vamsi B</h1>
+      <h2>Full Stack Developer</h2>
+      <p>
+        Through my projects and training, I have developed a strong understanding 
+        of software design, database management, and problem-solving.
+      </p>
+      <div class="buttons">
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#projects" class="btn btn-secondary">View Work</a>
+      </div>
+    </div>
+
+    <div class="profile-image">
+      <img src="file:///C:/Users/Vamsi/OneDrive/Pictures/Screenshots/profileimg.png" alt="Vamsi B">
+    </div>
+  </section>
+
+
+
+<!-- About Me Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <!-- Left Side: Text -->
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am VamsiB, a Electronics and Communication Engineering with hands-on 
+        experience in <strong>Java Full Stack Development</strong>. 
+        Skilled in building secure backend APIs, responsive front-end interfaces, 
+        and scalable applications, I have worked on projects such as a 
+         <em>Student Management System</em>.
+        
+      </p>
+      <p>
+        My expertise spans Java,MySQL,Html&Css.Passionate about problem-solving 
+        and modern software practices, I am eager to contribute to dynamic 
+        development teams and grow as a professional.
+      </p>
+      <ul class="about-details">
+        <li><strong>Email:</strong> vamsivamsi1170@gmail.com</li>
+        <li><strong>Phone:</strong> +91 6300825853</li>
+        <li><strong>Location:</strong> Chittoor,Andhra Pradesh</li>
+      </ul>
+   <a href="assets/Vamsi_CV" class="btn" target="_blank">Download CV</a>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div class="about-image">
+      <img src="file:///C:/Users/Vamsi/OneDrive/Pictures/Screenshots/profileimg.png" alt="Vamsi B">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <h2>My Skills</h2>
+  <div class="skill">
+    <span>Java</span>
+    <div class="progress"><div class="progress-bar" style="width:85%;">93%</div></div>
+  </div>
+ 
+  <div class="skill">
+    <span>SQL / MySQL</span>
+    <div class="progress"><div class="progress-bar" style="width:70%;">80%</div></div>
+  </div>
+
+  <div class="skill">
+    <span>HTML / CSS</span>
+    <div class="progress"><div class="progress-bar" style="width:800%;">90%</div></div>
+  </div>
+</section>
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+    <!-- Project Card -->
+
+
+    <div class="project-card">
+      <img src="images/sdbms.png" alt="Student Management System">
+      <h3>Student Management System</h3>
+      <p>
+        Full-stack MERN application to manage student records with CRUD 
+        operations and optimized MongoDB queries.
+      </p>
+      <p><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</p>
+    </div>
+
+   
+ 
+
+  </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Get In Touch</h2>
+  <div class="contact-container">
+
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <p><strong>Email:</strong> vamsivamsi1170@gmail.com</p>
+      <p><strong>Phone:</strong> +91 6300825853</p>
+      <p><strong>Location:</strong> Chittoor,Abdhra Pradesh</p>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+  <a href="https://www.linkedin.com/in/
+vamsi-b-7336b6209fullstack-developer
+" target="_blank">LinkedIn</a>
+  <a href="https://github.com/VAMSIB123" target="_blank">GitHub</a>
+ 
+</div>
+
+      <p class="motivation">Let's build something amazing together!</p>
+      <p class="copyright">© 2026 Vamsi B Umar Farook. All rights reserved.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+  })();
+
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    emailjs.sendForm("service_i1oc25v", "template_ho0553p", this)
+      .then(() => {
+        alert("Message sent successfully!");
+        this.reset();
+      })
+      .catch(err => {
+        alert("There was a problem sending your message.");
+        console.error("Error:", err);
+      });
+  });
+</script>
+
+</body>
+</html>
